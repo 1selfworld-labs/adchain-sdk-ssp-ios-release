@@ -33,7 +33,8 @@ Pod::Spec.new do |spec|
 
   spec.subspec "Admob" do |admob|
     admob.dependency "AdchainSsp/Core"
-    admob.dependency "Google-Mobile-Ads-SDK", "~> 12.12"
+    # Google-Mobile-Ads-SDK는 소비자가 직접 추가 (AdPopcorn 패턴)
+    # pod 'Google-Mobile-Ads-SDK', '~> 12.12'
     admob.source_files = "Adapters/Admob/**/*.swift"
   end
 end
