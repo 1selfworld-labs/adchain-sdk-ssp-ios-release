@@ -19,22 +19,12 @@ Pod::Spec.new do |spec|
   }
   spec.swift_version = "5.5"
   spec.requires_arc = true
-  spec.default_subspecs = "Core"
 
-  spec.subspec "Core" do |core|
-    core.vendored_frameworks = "AdchainSsp.xcframework"
-    core.dependency "AdchainCommon", "~> 0.2"
-    core.frameworks = "Foundation", "UIKit"
-    core.pod_target_xcconfig = {
-      "SWIFT_VERSION" => "5.5",
-      "ENABLE_BITCODE" => "NO"
-    }
-  end
-
-  spec.subspec "Admob" do |admob|
-    admob.dependency "AdchainSsp/Core"
-    # Google-Mobile-Ads-SDK는 소비자가 직접 추가 (AdPopcorn 패턴)
-    # pod 'Google-Mobile-Ads-SDK', '~> 12.12'
-    admob.source_files = "Adapters/Admob/**/*.swift"
-  end
+  spec.vendored_frameworks = "AdchainSsp.xcframework"
+  spec.dependency "AdchainCommon", "~> 0.2"
+  spec.frameworks = "Foundation", "UIKit"
+  spec.pod_target_xcconfig = {
+    "SWIFT_VERSION" => "5.5",
+    "ENABLE_BITCODE" => "NO"
+  }
 end
