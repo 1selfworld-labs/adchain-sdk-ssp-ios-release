@@ -21,13 +21,21 @@ AdChain SSP iOS SDK 바이너리 배포 레포지토리입니다.
 
 ### CocoaPods
 
+**Core only:**
 ```ruby
-# Core only
 pod 'AdchainSsp'
 ```
 
-> AdMob 사용 시 SPM의 `AdchainSspAdmob` 제품을 사용하세요. (`GoogleMobileAds` 자동 포함)
-> 어댑터를 추가하면 `AdchainSspSDK.initialize()` 시 자동 감지됩니다.
+**AdMob 함께 사용 시:**
+1. [GitHub Releases](https://github.com/1selfworld-labs/adchain-sdk-ssp-ios-release/releases/latest)에서 `AdchainSspAdmob-X.X.X.zip` 다운로드
+2. `AdmobAdapter.swift`, `AdmobAdapterFactory.swift`를 프로젝트에 추가
+3. Podfile에 추가:
+```ruby
+pod 'AdchainSsp'
+pod 'Google-Mobile-Ads-SDK', '~> 12.12'
+```
+
+> 어댑터 파일을 추가하면 `AdchainSspSDK.initialize()` 시 자동 감지됩니다.
 
 ## 의존성
 

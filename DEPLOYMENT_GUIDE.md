@@ -123,6 +123,7 @@ adchain-sdk-ssp-ios/DEPLOYMENT_GUIDE.md
 - [ ] `AdchainSsp.podspec` 버전 업데이트
 - [ ] `git tag -a "vX.X.X"` + push
 - [ ] `pod trunk push AdchainSsp.podspec --allow-warnings`
+- [ ] `AdchainSspAdmob-X.X.X.zip` 생성 + `gh release create vX.X.X` 첨부 (CocoaPods 고객용)
 
 ---
 
