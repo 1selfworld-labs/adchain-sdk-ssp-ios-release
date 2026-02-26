@@ -59,14 +59,14 @@ targets: [
 import AdchainSsp
 
 // 초기화 (어댑터 자동 감지)
-AdchainSsp.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
+AdchainSspSDK.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
 
 // Rewarded Video 로드
 let callback = MyAdCallback()
-AdchainSsp.loadRewardedVideo("YOUR_PLACEMENT_ID", callback: callback)
+AdchainSspSDK.loadRewardedVideo("YOUR_PLACEMENT_ID", callback: callback)
 
 // Rewarded Video 노출
-AdchainSsp.showRewardedVideo(viewController, placementId: "YOUR_PLACEMENT_ID", callback: callback)
+AdchainSspSDK.showRewardedVideo(viewController, placementId: "YOUR_PLACEMENT_ID", callback: callback)
 ```
 
 > `AdchainSspAdmob`이 링크된 경우 `initialize()` 시 AdMob 어댑터가 자동 감지됩니다.
@@ -130,9 +130,9 @@ adchain-sdk-ssp-ios/DEPLOYMENT_GUIDE.md
 
 | 항목 | 값 |
 |------|-----|
-| 최신 버전 | 0.3.0 |
+| 최신 버전 | 0.3.2 |
 | XCFramework | Core only (Google 없음) |
-| CocoaPods | `AdchainSsp` 0.3.0 |
+| CocoaPods | `AdchainSsp` 0.3.2 |
 | SPM | `AdchainSsp` + `AdchainSspAdmob` |
 | AdchainCommon 의존성 | `~> 0.2` |
 | GoogleMobileAds (Admob) | `exact: "12.12.0"` |
