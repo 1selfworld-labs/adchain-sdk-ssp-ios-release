@@ -1,0 +1,48 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name AdchainSsp
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AdchainCommon
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol SspAdapter : ObjectiveC.NSObjectProtocol {
+  @objc var networkName: Swift.String { get }
+  @objc func loadRewardedVideo(placementId: Swift.String, adUnitId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc func showRewardedVideo(_ viewController: UIKit.UIViewController, placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc func loadInterstitial(placementId: Swift.String, adUnitId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc func showInterstitial(_ viewController: UIKit.UIViewController, placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc func isRewardedVideoLoaded(_ placementId: Swift.String) -> Swift.Bool
+  @objc func isInterstitialLoaded(_ placementId: Swift.String) -> Swift.Bool
+  @objc func destroy()
+}
+@objc public protocol SspAdapterFactory {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func createAdapter(config: [Swift.String : Any]) -> (any AdchainSsp.SspAdapter)?
+  #endif
+}
+@_inheritsConvenienceInitializers @objc(AdchainSspSDK) final public class AdchainSspSDK : ObjectiveC.NSObject, AdchainCommon.AdchainSspBridgeProtocol {
+  @objc public static func registerAdapter(_ adapter: any AdchainSsp.SspAdapter)
+  @objc public static func initialize(_ config: [Swift.String : Any])
+  @objc public static func loadRewardedVideo(_ placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc public static func loadInterstitial(_ placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc public static func showRewardedVideo(_ viewController: UIKit.UIViewController, placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc public static func showInterstitial(_ viewController: UIKit.UIViewController, placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)
+  @objc public static func isAdLoaded(_ placementId: Swift.String) -> Swift.Bool
+  @objc public static func isInitialized() -> Swift.Bool
+  @objc public static func getVersion() -> Swift.String
+  @objc public static func destroy()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SspLogger {
+  public static var isDebug: Swift.Bool
+  public static func d(_ tag: Swift.String, _ message: Swift.String)
+  public static func i(_ tag: Swift.String, _ message: Swift.String)
+  public static func w(_ tag: Swift.String, _ message: Swift.String)
+  public static func e(_ tag: Swift.String, _ message: Swift.String)
+  @objc deinit
+}
