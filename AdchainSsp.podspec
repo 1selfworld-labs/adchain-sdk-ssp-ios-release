@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "AdchainSsp"
-  spec.version      = "0.3.0"
+  spec.version      = "0.3.2"
   spec.summary      = "AdChain SSP iOS SDK - Server-Side Platform advertising"
   spec.description  = <<-DESC
                        AdChain SSP SDK providing adapter-based mediation:

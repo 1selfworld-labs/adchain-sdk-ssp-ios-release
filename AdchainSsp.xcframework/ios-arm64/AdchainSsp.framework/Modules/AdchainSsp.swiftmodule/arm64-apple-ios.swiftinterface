@@ -24,7 +24,7 @@ import _SwiftConcurrencyShims
   @objc func createAdapter(config: [Swift.String : Any]) -> (any AdchainSsp.SspAdapter)?
   #endif
 }
-@_inheritsConvenienceInitializers @objc final public class AdchainSsp : ObjectiveC.NSObject, AdchainCommon.AdchainSspBridgeProtocol {
+@_inheritsConvenienceInitializers @objc(AdchainSspSDK) final public class AdchainSspSDK : ObjectiveC.NSObject, AdchainCommon.AdchainSspBridgeProtocol {
   @objc public static func registerAdapter(_ adapter: any AdchainSsp.SspAdapter)
   @objc public static func initialize(_ config: [Swift.String : Any])
   @objc public static func loadRewardedVideo(_ placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)

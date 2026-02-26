@@ -471,8 +471,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AdchainSsp",
-        "printedName": "AdchainSsp",
+        "name": "AdchainSspSDK",
+        "printedName": "AdchainSspSDK",
         "children": [
           {
             "kind": "Function",
@@ -492,8 +492,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)registerAdapter:",
-            "mangledName": "$s10AdchainSspAAC15registerAdapteryyAA0bD0_pFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)registerAdapter:",
+            "mangledName": "$s10AdchainSsp0aB3SDKC15registerAdapteryyAA0bE0_pFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "declAttributes": [
@@ -534,8 +534,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)initialize:",
-            "mangledName": "$s10AdchainSspAAC10initializeyySDySSypGFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)initialize:",
+            "mangledName": "$s10AdchainSsp0aB3SDKC10initializeyySDySSypGFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "initialize:",
@@ -570,8 +570,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)loadRewardedVideo:callback:",
-            "mangledName": "$s10AdchainSspAAC17loadRewardedVideo_8callbackySS_0A6Common0B10AdCallback_ptFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)loadRewardedVideo:callback:",
+            "mangledName": "$s10AdchainSsp0aB3SDKC17loadRewardedVideo_8callbackySS_0A6Common0B10AdCallback_ptFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "loadRewardedVideo:callback:",
@@ -606,8 +606,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)loadInterstitial:callback:",
-            "mangledName": "$s10AdchainSspAAC16loadInterstitial_8callbackySS_0A6Common0B10AdCallback_ptFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)loadInterstitial:callback:",
+            "mangledName": "$s10AdchainSsp0aB3SDKC16loadInterstitial_8callbackySS_0A6Common0B10AdCallback_ptFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "loadInterstitial:callback:",
@@ -648,8 +648,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)showRewardedVideo:placementId:callback:",
-            "mangledName": "$s10AdchainSspAAC17showRewardedVideo_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)showRewardedVideo:placementId:callback:",
+            "mangledName": "$s10AdchainSsp0aB3SDKC17showRewardedVideo_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "showRewardedVideo:placementId:callback:",
@@ -690,8 +690,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)showInterstitial:placementId:callback:",
-            "mangledName": "$s10AdchainSspAAC16showInterstitial_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)showInterstitial:placementId:callback:",
+            "mangledName": "$s10AdchainSsp0aB3SDKC16showInterstitial_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "showInterstitial:placementId:callback:",
@@ -721,8 +721,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)isAdLoaded:",
-            "mangledName": "$s10AdchainSspAAC10isAdLoadedySbSSFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)isAdLoaded:",
+            "mangledName": "$s10AdchainSsp0aB3SDKC10isAdLoadedySbSSFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "isAdLoaded:",
@@ -746,8 +746,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)isInitialized",
-            "mangledName": "$s10AdchainSspAAC13isInitializedSbyFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)isInitialized",
+            "mangledName": "$s10AdchainSsp0aB3SDKC13isInitializedSbyFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "isInitialized",
@@ -771,8 +771,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)getVersion",
-            "mangledName": "$s10AdchainSspAAC10getVersionSSyFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)getVersion",
+            "mangledName": "$s10AdchainSsp0aB3SDKC10getVersionSSyFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "getVersion",
@@ -795,8 +795,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)destroy",
-            "mangledName": "$s10AdchainSspAAC7destroyyyFZ",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)destroy",
+            "mangledName": "$s10AdchainSsp0aB3SDKC7destroyyyFZ",
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "destroy",
@@ -814,14 +814,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AdchainSsp",
-                "printedName": "AdchainSsp.AdchainSsp",
-                "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp"
+                "name": "AdchainSspSDK",
+                "printedName": "AdchainSsp.AdchainSspSDK",
+                "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(im)init",
-            "mangledName": "$s10AdchainSspAACABycfc",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(im)init",
+            "mangledName": "$s10AdchainSsp0aB3SDKCACycfc",
             "moduleName": "AdchainSsp",
             "overriding": true,
             "implicit": true,
@@ -835,9 +835,10 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp",
-        "mangledName": "$s10AdchainSspAAC",
+        "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK",
+        "mangledName": "$s10AdchainSsp0aB3SDKC",
         "moduleName": "AdchainSsp",
+        "objc_name": "AdchainSspSDK",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -1231,23 +1232,23 @@
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "BooleanLiteral",
-      "offset": 149,
+      "offset": 167,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "Dictionary",
-      "offset": 211,
+      "offset": 229,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "StringLiteral",
-      "offset": 291,
-      "length": 12,
-      "value": "\"AdchainSsp\""
+      "offset": 309,
+      "length": 15,
+      "value": "\"AdchainSspSDK\""
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSspConfig.swift",
