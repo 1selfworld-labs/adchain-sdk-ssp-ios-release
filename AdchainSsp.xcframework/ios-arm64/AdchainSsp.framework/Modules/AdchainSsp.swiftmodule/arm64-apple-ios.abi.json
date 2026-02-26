@@ -19,11 +19,441 @@
         "moduleName": "AdchainSsp"
       },
       {
+        "kind": "TypeDecl",
+        "name": "SspAdapter",
+        "printedName": "SspAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "networkName",
+            "printedName": "networkName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(py)networkName",
+            "mangledName": "$s10AdchainSsp0B7AdapterP11networkNameSSvp",
+            "moduleName": "AdchainSsp",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)networkName",
+                "mangledName": "$s10AdchainSsp0B7AdapterP11networkNameSSvg",
+                "moduleName": "AdchainSsp",
+                "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+                "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loadRewardedVideo",
+            "printedName": "loadRewardedVideo(placementId:adUnitId:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SspAdCallback",
+                "printedName": "any AdchainCommon.SspAdCallback",
+                "usr": "c:@M@AdchainCommon@objc(pl)SspAdCallback"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)loadRewardedVideoWithPlacementId:adUnitId:callback:",
+            "mangledName": "$s10AdchainSsp0B7AdapterP17loadRewardedVideo11placementId06adUnitH08callbackySS_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "protocolReq": true,
+            "objc_name": "loadRewardedVideoWithPlacementId:adUnitId:callback:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showRewardedVideo",
+            "printedName": "showRewardedVideo(_:placementId:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SspAdCallback",
+                "printedName": "any AdchainCommon.SspAdCallback",
+                "usr": "c:@M@AdchainCommon@objc(pl)SspAdCallback"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)showRewardedVideo:placementId:callback:",
+            "mangledName": "$s10AdchainSsp0B7AdapterP17showRewardedVideo_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadInterstitial",
+            "printedName": "loadInterstitial(placementId:adUnitId:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SspAdCallback",
+                "printedName": "any AdchainCommon.SspAdCallback",
+                "usr": "c:@M@AdchainCommon@objc(pl)SspAdCallback"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)loadInterstitialWithPlacementId:adUnitId:callback:",
+            "mangledName": "$s10AdchainSsp0B7AdapterP16loadInterstitial11placementId06adUnitG08callbackySS_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "protocolReq": true,
+            "objc_name": "loadInterstitialWithPlacementId:adUnitId:callback:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showInterstitial",
+            "printedName": "showInterstitial(_:placementId:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SspAdCallback",
+                "printedName": "any AdchainCommon.SspAdCallback",
+                "usr": "c:@M@AdchainCommon@objc(pl)SspAdCallback"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)showInterstitial:placementId:callback:",
+            "mangledName": "$s10AdchainSsp0B7AdapterP16showInterstitial_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isRewardedVideoLoaded",
+            "printedName": "isRewardedVideoLoaded(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)isRewardedVideoLoaded:",
+            "mangledName": "$s10AdchainSsp0B7AdapterP21isRewardedVideoLoadedySbSSF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isInterstitialLoaded",
+            "printedName": "isInterstitialLoaded(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)isInterstitialLoaded:",
+            "mangledName": "$s10AdchainSsp0B7AdapterP20isInterstitialLoadedySbSSF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)destroy",
+            "mangledName": "$s10AdchainSsp0B7AdapterP7destroyyyF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter",
+        "mangledName": "$s10AdchainSsp0B7AdapterP",
+        "moduleName": "AdchainSsp",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AdchainSsp"
+      },
+      {
+        "kind": "Import",
+        "name": "AdchainCommon",
+        "printedName": "AdchainCommon",
+        "declKind": "Import",
+        "moduleName": "AdchainSsp"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SspAdapterFactory",
+        "printedName": "SspAdapterFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "createAdapter",
+            "printedName": "createAdapter(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AdchainSsp.SspAdapter)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SspAdapter",
+                    "printedName": "any AdchainSsp.SspAdapter",
+                    "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapterFactory(im)createAdapterWithConfig:",
+            "mangledName": "$s10AdchainSsp0B14AdapterFactoryP06createC06configAA0bC0_pSgSDySSypG_tF",
+            "moduleName": "AdchainSsp",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapterFactory>",
+            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapterFactory>",
+            "protocolReq": true,
+            "objc_name": "createAdapterWithConfig:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AdchainSsp@objc(pl)SspAdapterFactory",
+        "mangledName": "$s10AdchainSsp0B14AdapterFactoryP",
+        "moduleName": "AdchainSsp",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -36,27 +466,6 @@
         "kind": "Import",
         "name": "AdchainCommon",
         "printedName": "AdchainCommon",
-        "declKind": "Import",
-        "moduleName": "AdchainSsp"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AdchainSsp"
-      },
-      {
-        "kind": "Import",
-        "name": "AdchainCommon",
-        "printedName": "AdchainCommon",
-        "declKind": "Import",
-        "moduleName": "AdchainSsp"
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
         "declKind": "Import",
         "moduleName": "AdchainSsp"
       },
@@ -65,6 +474,35 @@
         "name": "AdchainSsp",
         "printedName": "AdchainSsp",
         "children": [
+          {
+            "kind": "Function",
+            "name": "registerAdapter",
+            "printedName": "registerAdapter(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SspAdapter",
+                "printedName": "any AdchainSsp.SspAdapter",
+                "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)registerAdapter:",
+            "mangledName": "$s10AdchainSspAAC15registerAdapteryyAA0bD0_pFZ",
+            "moduleName": "AdchainSsp",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Function",
             "name": "initialize",
@@ -297,30 +735,6 @@
           },
           {
             "kind": "Function",
-            "name": "destroy",
-            "printedName": "destroy()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)destroy",
-            "mangledName": "$s10AdchainSspAAC7destroyyyFZ",
-            "moduleName": "AdchainSsp",
-            "static": true,
-            "objc_name": "destroy",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "isInitialized",
             "printedName": "isInitialized()",
             "children": [
@@ -362,6 +776,30 @@
             "moduleName": "AdchainSsp",
             "static": true,
             "objc_name": "getVersion",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSsp(cm)destroy",
+            "mangledName": "$s10AdchainSspAAC7destroyyyFZ",
+            "moduleName": "AdchainSsp",
+            "static": true,
+            "objc_name": "destroy",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -505,6 +943,274 @@
         "moduleName": "AdchainSsp"
       },
       {
+        "kind": "TypeDecl",
+        "name": "SspLogger",
+        "printedName": "SspLogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isDebug",
+            "printedName": "isDebug",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvpZ",
+            "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvpZ",
+            "moduleName": "AdchainSsp",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvgZ",
+                "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvgZ",
+                "moduleName": "AdchainSsp",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvsZ",
+                "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvsZ",
+                "moduleName": "AdchainSsp",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvMZ",
+                "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvMZ",
+                "moduleName": "AdchainSsp",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "d",
+            "printedName": "d(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AdchainSsp0B6LoggerC1dyySS_SStFZ",
+            "mangledName": "$s10AdchainSsp0B6LoggerC1dyySS_SStFZ",
+            "moduleName": "AdchainSsp",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "i",
+            "printedName": "i(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AdchainSsp0B6LoggerC1iyySS_SStFZ",
+            "mangledName": "$s10AdchainSsp0B6LoggerC1iyySS_SStFZ",
+            "moduleName": "AdchainSsp",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "w",
+            "printedName": "w(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AdchainSsp0B6LoggerC1wyySS_SStFZ",
+            "mangledName": "$s10AdchainSsp0B6LoggerC1wyySS_SStFZ",
+            "moduleName": "AdchainSsp",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "e",
+            "printedName": "e(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AdchainSsp0B6LoggerC1eyySS_SStFZ",
+            "mangledName": "$s10AdchainSsp0B6LoggerC1eyySS_SStFZ",
+            "moduleName": "AdchainSsp",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10AdchainSsp0B6LoggerC",
+        "mangledName": "$s10AdchainSsp0B6LoggerC",
+        "moduleName": "AdchainSsp",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -523,58 +1229,23 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/Adapter\/Admob\/AdmobAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 132,
-      "length": 7,
-      "value": "\"admob\""
-    },
-    {
-      "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/Adapter\/Admob\/AdmobAdapter.swift",
-      "kind": "Dictionary",
-      "offset": 192,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/Adapter\/Admob\/AdmobAdapter.swift",
-      "kind": "Dictionary",
-      "offset": 256,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/Adapter\/Admob\/AdmobAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 290,
-      "length": 14,
-      "value": "\"AdmobAdapter\""
-    },
-    {
-      "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/Adapter\/Admob\/AdmobAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 4762,
-      "length": 25,
-      "value": "\"AdmobFullScreenDelegate\""
-    },
-    {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "BooleanLiteral",
-      "offset": 172,
+      "offset": 149,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "Dictionary",
-      "offset": 234,
+      "offset": 211,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "StringLiteral",
-      "offset": 314,
+      "offset": 291,
       "length": 12,
       "value": "\"AdchainSsp\""
     },
@@ -602,14 +1273,14 @@
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/Internal\/SspLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 77,
+      "offset": 82,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/Internal\/SspLogger.swift",
       "kind": "StringLiteral",
-      "offset": 115,
+      "offset": 120,
       "length": 14,
       "value": "\"[AdchainSSP]\""
     },
