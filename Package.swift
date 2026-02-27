@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "AdchainSsp",
-            targets: ["AdchainSsp"]
+            targets: ["AdchainSspCore"]
         ),
         .library(
             name: "AdchainSspAdmob",
@@ -26,13 +26,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "AdchainSsp",
+            name: "AdchainSspCore",
             path: "AdchainSsp.xcframework"
         ),
         .target(
             name: "AdchainSspAdmob",
             dependencies: [
-                "AdchainSsp",
+                "AdchainSspCore",
                 .product(name: "AdchainCommon", package: "adchain-sdk-common-ios-release"),
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
             ],
