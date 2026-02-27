@@ -9,7 +9,7 @@ XCFramework + 어댑터 소스를 함께 제공하며 SPM과 CocoaPods를 통해
 
 ```
 adchain-sdk-ssp-ios-release/
-├── AdchainSsp.xcframework/        # Core 바이너리 (Google 없음)
+├── AdchainSspCore.xcframework/    # Core 바이너리 (Google 없음)
 │   ├── ios-arm64/                 # Device slice
 │   └── ios-arm64_x86_64-simulator/ # Simulator slice
 ├── Adapters/
@@ -17,8 +17,8 @@ adchain-sdk-ssp-ios-release/
 │       ├── AdmobAdapter.swift     # SPM AdchainSspAdmob 타겟 소스
 │       └── AdmobAdapterFactory.swift
 ├── Sources/
-│   └── Wrapper/
-│       └── exports.swift          # @_exported import re-export
+│   └── AdchainSspTarget/
+│       └── ForceLink.swift        # @objc ForceLink: AdchainSsp 링커 스트리핑 방지
 ├── Package.swift                  # SPM 패키지 정의
 ├── AdchainSsp.podspec             # CocoaPods spec (Core only)
 └── LICENSE
@@ -45,7 +45,7 @@ targets: [
 ]
 ```
 
-`AdchainSspAdmob`을 추가하면 `AdchainSsp` 코어와 `GoogleMobileAds 12.12.0`이 함께 설치됩니다.
+`AdchainSspAdmob`을 추가하면 `AdchainSspCore` 바이너리와 `GoogleMobileAds 12.12.0`이 함께 설치됩니다.
 
 ### Core만 사용 (다른 어댑터 직접 구현 시)
 
@@ -56,7 +56,7 @@ targets: [
 ### 사용법
 
 ```swift
-import AdchainSsp
+import AdchainSspCore
 
 // 초기화 (어댑터 자동 감지)
 AdchainSsp.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
@@ -92,15 +92,15 @@ pod 'AdchainSsp'  # Core only
 
 | Product | 타겟 | 포함 내용 |
 |---------|------|---------|
-| `AdchainSsp` | `AdchainSsp` → `AdchainSspBinary` | Core XCFramework + AdchainCommon |
+| `AdchainSsp` | `AdchainSspTarget` → `AdchainSspCore` | Core XCFramework + AdchainCommon |
 | `AdchainSspAdmob` | `AdchainSspAdmob` | AdmobAdapter 소스 + GoogleMobileAds 12.12.0 |
 
 ### 의존성 체인
 
 ```
 AdchainSspAdmob (source)
-  ├── AdchainSsp (re-export, wrapper)
-  │     ├── AdchainSspBinary (xcframework binary, module: AdchainSspCore)
+  ├── AdchainSspTarget (wrapper, ForceLink)
+  │     ├── AdchainSspCore (xcframework binary)
   │     └── AdchainCommon (xcframework binary)
   └── GoogleMobileAds 12.12.0
 ```
@@ -131,9 +131,9 @@ adchain-sdk-ssp-ios/DEPLOYMENT_GUIDE.md
 
 | 항목 | 값 |
 |------|-----|
-| 최신 버전 | 0.3.3 |
+| 최신 버전 | 0.3.7 |
 | XCFramework | Core only (Google 없음), 모듈명: AdchainSspCore |
-| CocoaPods | `AdchainSsp` 0.3.3 |
+| CocoaPods | `AdchainSsp` 0.3.7 |
 | SPM | `AdchainSsp` + `AdchainSspAdmob` |
 | AdchainCommon 의존성 | `~> 0.2` |
 | GoogleMobileAds (Admob) | `exact: "12.12.0"` |
