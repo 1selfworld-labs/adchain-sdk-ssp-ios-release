@@ -1,3 +1,4 @@
-// Consumer가 `import AdchainSsp` 하나로 공유 타입에 접근 가능하도록 re-export
-@_exported import AdchainSspCore
+// AdchainSspCore 타입 re-export (typealias 방식: 모듈명/클래스명 중의성 해소)
+import AdchainSspCore
+public typealias AdchainSsp = AdchainSspCore.AdchainSsp
 @_exported import AdchainCommon

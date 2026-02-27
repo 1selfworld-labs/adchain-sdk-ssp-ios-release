@@ -1,5 +1,5 @@
 import Foundation
-import AdchainSsp
+import AdchainSspCore
 import GoogleMobileAds
 
 @objc(AdchainAdmobFactory)

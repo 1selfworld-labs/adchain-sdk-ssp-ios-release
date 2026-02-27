@@ -1,6 +1,6 @@
 import UIKit
 import AdchainCommon
-import AdchainSsp
+import AdchainSspCore
 import GoogleMobileAds
 
 public class AdmobAdapter: NSObject, SspAdapter {
