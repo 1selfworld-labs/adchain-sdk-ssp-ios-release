@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "AdchainSsp"
-  spec.version      = "0.3.3"
+  spec.version      = "0.3.4"
   spec.summary      = "AdChain SSP iOS SDK - Server-Side Platform advertising"
   spec.description  = <<-DESC
                        AdChain SSP SDK providing adapter-based mediation:
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.5"
   spec.requires_arc = true
 
-  spec.vendored_frameworks = "AdchainSsp.xcframework"
+  spec.vendored_frameworks = "AdchainSspCore.xcframework"
   spec.dependency "AdchainCommon", "~> 0.2"
   spec.frameworks = "Foundation", "UIKit"
   spec.pod_target_xcconfig = {
