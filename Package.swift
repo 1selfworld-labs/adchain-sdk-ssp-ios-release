@@ -7,10 +7,12 @@ let package = Package(
     products: [
         .library(
             name: "AdchainSsp",
+            type: .dynamic,
             targets: ["AdchainSspCore"]
         ),
         .library(
             name: "AdchainSspAdmob",
+            type: .dynamic,
             targets: ["AdchainSspAdmob"]
         ),
     ],
