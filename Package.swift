@@ -26,21 +26,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "AdchainSspBinary",
-            path: "AdchainSsp.xcframework"
-        ),
-        .target(
             name: "AdchainSsp",
-            dependencies: [
-                "AdchainSspBinary",
-                .product(name: "AdchainCommon", package: "adchain-sdk-common-ios-release"),
-            ],
-            path: "Sources/Wrapper"
+            path: "AdchainSsp.xcframework"
         ),
         .target(
             name: "AdchainSspAdmob",
             dependencies: [
                 "AdchainSsp",
+                .product(name: "AdchainCommon", package: "adchain-sdk-common-ios-release"),
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
             ],
             path: "Adapters/Admob"
