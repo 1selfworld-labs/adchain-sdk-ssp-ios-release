@@ -1,22 +1,22 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "AdchainSsp",
-    "printedName": "AdchainSsp",
+    "name": "AdchainSspCore",
+    "printedName": "AdchainSspCore",
     "children": [
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "Import",
         "name": "AdchainCommon",
         "printedName": "AdchainCommon",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "TypeDecl",
@@ -36,9 +36,9 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(py)networkName",
-            "mangledName": "$s10AdchainSsp0B7AdapterP11networkNameSSvp",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(py)networkName",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP11networkNameSSvp",
+            "moduleName": "AdchainSspCore",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -57,11 +57,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)networkName",
-                "mangledName": "$s10AdchainSsp0B7AdapterP11networkNameSSvg",
-                "moduleName": "AdchainSsp",
-                "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-                "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+                "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)networkName",
+                "mangledName": "$s14AdchainSspCore0B7AdapterP11networkNameSSvg",
+                "moduleName": "AdchainSspCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+                "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
                 "protocolReq": true,
                 "declAttributes": [
                   "ObjC"
@@ -101,11 +101,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)loadRewardedVideoWithPlacementId:adUnitId:callback:",
-            "mangledName": "$s10AdchainSsp0B7AdapterP17loadRewardedVideo11placementId06adUnitH08callbackySS_SS0A6Common0B10AdCallback_ptF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)loadRewardedVideoWithPlacementId:adUnitId:callback:",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP17loadRewardedVideo11placementId06adUnitI08callbackySS_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
             "protocolReq": true,
             "objc_name": "loadRewardedVideoWithPlacementId:adUnitId:callback:",
             "declAttributes": [
@@ -144,11 +144,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)showRewardedVideo:placementId:callback:",
-            "mangledName": "$s10AdchainSsp0B7AdapterP17showRewardedVideo_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)showRewardedVideo:placementId:callback:",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP17showRewardedVideo_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -186,11 +186,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)loadInterstitialWithPlacementId:adUnitId:callback:",
-            "mangledName": "$s10AdchainSsp0B7AdapterP16loadInterstitial11placementId06adUnitG08callbackySS_SS0A6Common0B10AdCallback_ptF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)loadInterstitialWithPlacementId:adUnitId:callback:",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP16loadInterstitial11placementId06adUnitH08callbackySS_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
             "protocolReq": true,
             "objc_name": "loadInterstitialWithPlacementId:adUnitId:callback:",
             "declAttributes": [
@@ -229,11 +229,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)showInterstitial:placementId:callback:",
-            "mangledName": "$s10AdchainSsp0B7AdapterP16showInterstitial_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)showInterstitial:placementId:callback:",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP16showInterstitial_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -260,11 +260,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)isRewardedVideoLoaded:",
-            "mangledName": "$s10AdchainSsp0B7AdapterP21isRewardedVideoLoadedySbSSF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)isRewardedVideoLoaded:",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP21isRewardedVideoLoadedySbSSF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -291,11 +291,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)isInterstitialLoaded:",
-            "mangledName": "$s10AdchainSsp0B7AdapterP20isInterstitialLoadedySbSSF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)isInterstitialLoaded:",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP20isInterstitialLoadedySbSSF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -315,11 +315,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter(im)destroy",
-            "mangledName": "$s10AdchainSsp0B7AdapterP7destroyyyF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapter>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapter>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter(im)destroy",
+            "mangledName": "$s14AdchainSspCore0B7AdapterP7destroyyyF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapter>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapter>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -329,9 +329,9 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter",
-        "mangledName": "$s10AdchainSsp0B7AdapterP",
-        "moduleName": "AdchainSsp",
+        "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter",
+        "mangledName": "$s14AdchainSspCore0B7AdapterP",
+        "moduleName": "AdchainSspCore",
         "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
         "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
         "declAttributes": [
@@ -360,14 +360,14 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "Import",
         "name": "AdchainCommon",
         "printedName": "AdchainCommon",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "TypeDecl",
@@ -382,13 +382,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any AdchainSsp.SspAdapter)?",
+                "printedName": "(any AdchainSspCore.SspAdapter)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "SspAdapter",
-                    "printedName": "any AdchainSsp.SspAdapter",
-                    "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter"
+                    "printedName": "any AdchainSspCore.SspAdapter",
+                    "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter"
                   }
                 ],
                 "usr": "s:Sq"
@@ -414,11 +414,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(pl)SspAdapterFactory(im)createAdapterWithConfig:",
-            "mangledName": "$s10AdchainSsp0B14AdapterFactoryP06createC06configAA0bC0_pSgSDySSypG_tF",
-            "moduleName": "AdchainSsp",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSsp.SspAdapterFactory>",
-            "sugared_genericSig": "<Self where Self : AdchainSsp.SspAdapterFactory>",
+            "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapterFactory(im)createAdapterWithConfig:",
+            "mangledName": "$s14AdchainSspCore0B14AdapterFactoryP06createD06configAA0bD0_pSgSDySSypG_tF",
+            "moduleName": "AdchainSspCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdchainSspCore.SspAdapterFactory>",
+            "sugared_genericSig": "<Self where Self : AdchainSspCore.SspAdapterFactory>",
             "protocolReq": true,
             "objc_name": "createAdapterWithConfig:",
             "declAttributes": [
@@ -429,9 +429,9 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@AdchainSsp@objc(pl)SspAdapterFactory",
-        "mangledName": "$s10AdchainSsp0B14AdapterFactoryP",
-        "moduleName": "AdchainSsp",
+        "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapterFactory",
+        "mangledName": "$s14AdchainSspCore0B14AdapterFactoryP",
+        "moduleName": "AdchainSspCore",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
@@ -460,19 +460,19 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "Import",
         "name": "AdchainCommon",
         "printedName": "AdchainCommon",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "TypeDecl",
-        "name": "AdchainSspSDK",
-        "printedName": "AdchainSspSDK",
+        "name": "AdchainSsp",
+        "printedName": "AdchainSsp",
         "children": [
           {
             "kind": "Function",
@@ -487,14 +487,14 @@
               {
                 "kind": "TypeNominal",
                 "name": "SspAdapter",
-                "printedName": "any AdchainSsp.SspAdapter",
-                "usr": "c:@M@AdchainSsp@objc(pl)SspAdapter"
+                "printedName": "any AdchainSspCore.SspAdapter",
+                "usr": "c:@M@AdchainSspCore@objc(pl)SspAdapter"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)registerAdapter:",
-            "mangledName": "$s10AdchainSsp0aB3SDKC15registerAdapteryyAA0bE0_pFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)registerAdapter:",
+            "mangledName": "$s14AdchainSspCore0aB0C15registerAdapteryyAA0bE0_pFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "declAttributes": [
               "Final",
@@ -534,9 +534,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)initialize:",
-            "mangledName": "$s10AdchainSsp0aB3SDKC10initializeyySDySSypGFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)initialize:",
+            "mangledName": "$s14AdchainSspCore0aB0C10initializeyySDySSypGFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "initialize:",
             "declAttributes": [
@@ -570,9 +570,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)loadRewardedVideo:callback:",
-            "mangledName": "$s10AdchainSsp0aB3SDKC17loadRewardedVideo_8callbackySS_0A6Common0B10AdCallback_ptFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)loadRewardedVideo:callback:",
+            "mangledName": "$s14AdchainSspCore0aB0C17loadRewardedVideo_8callbackySS_0A6Common0B10AdCallback_ptFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "loadRewardedVideo:callback:",
             "declAttributes": [
@@ -606,9 +606,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)loadInterstitial:callback:",
-            "mangledName": "$s10AdchainSsp0aB3SDKC16loadInterstitial_8callbackySS_0A6Common0B10AdCallback_ptFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)loadInterstitial:callback:",
+            "mangledName": "$s14AdchainSspCore0aB0C16loadInterstitial_8callbackySS_0A6Common0B10AdCallback_ptFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "loadInterstitial:callback:",
             "declAttributes": [
@@ -648,9 +648,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)showRewardedVideo:placementId:callback:",
-            "mangledName": "$s10AdchainSsp0aB3SDKC17showRewardedVideo_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)showRewardedVideo:placementId:callback:",
+            "mangledName": "$s14AdchainSspCore0aB0C17showRewardedVideo_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "showRewardedVideo:placementId:callback:",
             "declAttributes": [
@@ -690,9 +690,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)showInterstitial:placementId:callback:",
-            "mangledName": "$s10AdchainSsp0aB3SDKC16showInterstitial_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)showInterstitial:placementId:callback:",
+            "mangledName": "$s14AdchainSspCore0aB0C16showInterstitial_11placementId8callbackySo16UIViewControllerC_SS0A6Common0B10AdCallback_ptFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "showInterstitial:placementId:callback:",
             "declAttributes": [
@@ -721,9 +721,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)isAdLoaded:",
-            "mangledName": "$s10AdchainSsp0aB3SDKC10isAdLoadedySbSSFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)isAdLoaded:",
+            "mangledName": "$s14AdchainSspCore0aB0C10isAdLoadedySbSSFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "isAdLoaded:",
             "declAttributes": [
@@ -746,9 +746,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)isInitialized",
-            "mangledName": "$s10AdchainSsp0aB3SDKC13isInitializedSbyFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)isInitialized",
+            "mangledName": "$s14AdchainSspCore0aB0C13isInitializedSbyFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "isInitialized",
             "declAttributes": [
@@ -771,9 +771,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)getVersion",
-            "mangledName": "$s10AdchainSsp0aB3SDKC10getVersionSSyFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)getVersion",
+            "mangledName": "$s14AdchainSspCore0aB0C10getVersionSSyFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "getVersion",
             "declAttributes": [
@@ -795,9 +795,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(cm)destroy",
-            "mangledName": "$s10AdchainSsp0aB3SDKC7destroyyyFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(cm)destroy",
+            "mangledName": "$s14AdchainSspCore0aB0C7destroyyyFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "objc_name": "destroy",
             "declAttributes": [
@@ -814,15 +814,15 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AdchainSspSDK",
-                "printedName": "AdchainSsp.AdchainSspSDK",
-                "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK"
+                "name": "AdchainSsp",
+                "printedName": "AdchainSspCore.AdchainSsp",
+                "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK(im)init",
-            "mangledName": "$s10AdchainSsp0aB3SDKCACycfc",
-            "moduleName": "AdchainSsp",
+            "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp(im)init",
+            "mangledName": "$s14AdchainSspCore0aB0CACycfc",
+            "moduleName": "AdchainSspCore",
             "overriding": true,
             "implicit": true,
             "objc_name": "init",
@@ -835,10 +835,10 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@AdchainSsp@objc(cs)AdchainSspSDK",
-        "mangledName": "$s10AdchainSsp0aB3SDKC",
-        "moduleName": "AdchainSsp",
-        "objc_name": "AdchainSspSDK",
+        "usr": "c:@M@AdchainSspCore@objc(cs)AdchainSsp",
+        "mangledName": "$s14AdchainSspCore0aB0C",
+        "moduleName": "AdchainSspCore",
+        "objc_name": "AdchainSsp",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -927,21 +927,21 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "Import",
         "name": "AdchainCommon",
         "printedName": "AdchainCommon",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "TypeDecl",
@@ -961,9 +961,9 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvpZ",
-            "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvpZ",
-            "moduleName": "AdchainSsp",
+            "usr": "s:14AdchainSspCore0B6LoggerC7isDebugSbvpZ",
+            "mangledName": "$s14AdchainSspCore0B6LoggerC7isDebugSbvpZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
@@ -986,9 +986,9 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvgZ",
-                "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvgZ",
-                "moduleName": "AdchainSsp",
+                "usr": "s:14AdchainSspCore0B6LoggerC7isDebugSbvgZ",
+                "mangledName": "$s14AdchainSspCore0B6LoggerC7isDebugSbvgZ",
+                "moduleName": "AdchainSspCore",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
@@ -1014,9 +1014,9 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvsZ",
-                "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvsZ",
-                "moduleName": "AdchainSsp",
+                "usr": "s:14AdchainSspCore0B6LoggerC7isDebugSbvsZ",
+                "mangledName": "$s14AdchainSspCore0B6LoggerC7isDebugSbvsZ",
+                "moduleName": "AdchainSspCore",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
@@ -1036,9 +1036,9 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10AdchainSsp0B6LoggerC7isDebugSbvMZ",
-                "mangledName": "$s10AdchainSsp0B6LoggerC7isDebugSbvMZ",
-                "moduleName": "AdchainSsp",
+                "usr": "s:14AdchainSspCore0B6LoggerC7isDebugSbvMZ",
+                "mangledName": "$s14AdchainSspCore0B6LoggerC7isDebugSbvMZ",
+                "moduleName": "AdchainSspCore",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
@@ -1072,9 +1072,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10AdchainSsp0B6LoggerC1dyySS_SStFZ",
-            "mangledName": "$s10AdchainSsp0B6LoggerC1dyySS_SStFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "s:14AdchainSspCore0B6LoggerC1dyySS_SStFZ",
+            "mangledName": "$s14AdchainSspCore0B6LoggerC1dyySS_SStFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1106,9 +1106,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10AdchainSsp0B6LoggerC1iyySS_SStFZ",
-            "mangledName": "$s10AdchainSsp0B6LoggerC1iyySS_SStFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "s:14AdchainSspCore0B6LoggerC1iyySS_SStFZ",
+            "mangledName": "$s14AdchainSspCore0B6LoggerC1iyySS_SStFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1140,9 +1140,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10AdchainSsp0B6LoggerC1wyySS_SStFZ",
-            "mangledName": "$s10AdchainSsp0B6LoggerC1wyySS_SStFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "s:14AdchainSspCore0B6LoggerC1wyySS_SStFZ",
+            "mangledName": "$s14AdchainSspCore0B6LoggerC1wyySS_SStFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1174,9 +1174,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10AdchainSsp0B6LoggerC1eyySS_SStFZ",
-            "mangledName": "$s10AdchainSsp0B6LoggerC1eyySS_SStFZ",
-            "moduleName": "AdchainSsp",
+            "usr": "s:14AdchainSspCore0B6LoggerC1eyySS_SStFZ",
+            "mangledName": "$s14AdchainSspCore0B6LoggerC1eyySS_SStFZ",
+            "moduleName": "AdchainSspCore",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1186,9 +1186,9 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:10AdchainSsp0B6LoggerC",
-        "mangledName": "$s10AdchainSsp0B6LoggerC",
-        "moduleName": "AdchainSsp",
+        "usr": "s:14AdchainSspCore0B6LoggerC",
+        "mangledName": "$s14AdchainSspCore0B6LoggerC",
+        "moduleName": "AdchainSspCore",
         "declAttributes": [
           "Final",
           "AccessControl"
@@ -1216,14 +1216,14 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       },
       {
         "kind": "Import",
         "name": "AdchainCommon",
         "printedName": "AdchainCommon",
         "declKind": "Import",
-        "moduleName": "AdchainSsp"
+        "moduleName": "AdchainSspCore"
       }
     ],
     "json_format_version": 8
@@ -1232,23 +1232,23 @@
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "BooleanLiteral",
-      "offset": 167,
+      "offset": 161,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "Dictionary",
-      "offset": 229,
+      "offset": 223,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSsp.swift",
       "kind": "StringLiteral",
-      "offset": 309,
-      "length": 15,
-      "value": "\"AdchainSspSDK\""
+      "offset": 303,
+      "length": 12,
+      "value": "\"AdchainSsp\""
     },
     {
       "filePath": "\/Users\/jason\/Documents\/Projects\/1SELFWORLD\/adchain\/adchain-sdk\/adchain-sdk-ssp-ios\/AdchainSsp\/Sources\/AdchainSspConfig.swift",

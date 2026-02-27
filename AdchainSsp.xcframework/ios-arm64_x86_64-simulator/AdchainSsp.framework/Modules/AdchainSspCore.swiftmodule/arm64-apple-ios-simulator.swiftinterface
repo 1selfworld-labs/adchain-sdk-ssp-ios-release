@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name AdchainSsp
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name AdchainSspCore
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AdchainCommon
 import Foundation
 import Swift
@@ -21,11 +21,11 @@ import _SwiftConcurrencyShims
 }
 @objc public protocol SspAdapterFactory {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc func createAdapter(config: [Swift.String : Any]) -> (any AdchainSsp.SspAdapter)?
+  @objc func createAdapter(config: [Swift.String : Any]) -> (any AdchainSspCore.SspAdapter)?
   #endif
 }
-@_inheritsConvenienceInitializers @objc(AdchainSspSDK) final public class AdchainSspSDK : ObjectiveC.NSObject, AdchainCommon.AdchainSspBridgeProtocol {
-  @objc public static func registerAdapter(_ adapter: any AdchainSsp.SspAdapter)
+@_inheritsConvenienceInitializers @objc(AdchainSsp) final public class AdchainSsp : ObjectiveC.NSObject, AdchainCommon.AdchainSspBridgeProtocol {
+  @objc public static func registerAdapter(_ adapter: any AdchainSspCore.SspAdapter)
   @objc public static func initialize(_ config: [Swift.String : Any])
   @objc public static func loadRewardedVideo(_ placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)
   @objc public static func loadInterstitial(_ placementId: Swift.String, callback: any AdchainCommon.SspAdCallback)

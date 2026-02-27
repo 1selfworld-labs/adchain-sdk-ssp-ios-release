@@ -59,14 +59,14 @@ targets: [
 import AdchainSsp
 
 // 초기화 (어댑터 자동 감지)
-AdchainSspSDK.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
+AdchainSsp.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
 
 // Rewarded Video 로드
 let callback = MyAdCallback()
-AdchainSspSDK.loadRewardedVideo("YOUR_PLACEMENT_ID", callback: callback)
+AdchainSsp.loadRewardedVideo("YOUR_PLACEMENT_ID", callback: callback)
 
 // Rewarded Video 노출
-AdchainSspSDK.showRewardedVideo(viewController, placementId: "YOUR_PLACEMENT_ID", callback: callback)
+AdchainSsp.showRewardedVideo(viewController, placementId: "YOUR_PLACEMENT_ID", callback: callback)
 ```
 
 > `AdchainSspAdmob`이 링크된 경우 `initialize()` 시 AdMob 어댑터가 자동 감지됩니다.
@@ -92,15 +92,15 @@ pod 'AdchainSsp'  # Core only
 
 | Product | 타겟 | 포함 내용 |
 |---------|------|---------|
-| `AdchainSsp` | `AdchainSspWrapper` → `AdchainSspBinary` | Core XCFramework + AdchainCommon |
+| `AdchainSsp` | `AdchainSsp` → `AdchainSspBinary` | Core XCFramework + AdchainCommon |
 | `AdchainSspAdmob` | `AdchainSspAdmob` | AdmobAdapter 소스 + GoogleMobileAds 12.12.0 |
 
 ### 의존성 체인
 
 ```
 AdchainSspAdmob (source)
-  ├── AdchainSspWrapper (re-export)
-  │     ├── AdchainSspBinary (xcframework binary)
+  ├── AdchainSsp (re-export, wrapper)
+  │     ├── AdchainSspBinary (xcframework binary, module: AdchainSspCore)
   │     └── AdchainCommon (xcframework binary)
   └── GoogleMobileAds 12.12.0
 ```
@@ -131,9 +131,9 @@ adchain-sdk-ssp-ios/DEPLOYMENT_GUIDE.md
 
 | 항목 | 값 |
 |------|-----|
-| 최신 버전 | 0.3.2 |
-| XCFramework | Core only (Google 없음) |
-| CocoaPods | `AdchainSsp` 0.3.2 |
+| 최신 버전 | 0.3.3 |
+| XCFramework | Core only (Google 없음), 모듈명: AdchainSspCore |
+| CocoaPods | `AdchainSsp` 0.3.3 |
 | SPM | `AdchainSsp` + `AdchainSspAdmob` |
 | AdchainCommon 의존성 | `~> 0.2` |
 | GoogleMobileAds (Admob) | `exact: "12.12.0"` |

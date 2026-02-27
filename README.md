@@ -8,7 +8,7 @@ AdChain SSP iOS SDK 바이너리 배포 레포지토리입니다.
 
 **AdMob 사용 시:**
 ```swift
-.package(url: "https://github.com/1selfworld-labs/adchain-sdk-ssp-ios-release.git", from: "0.3.2")
+.package(url: "https://github.com/1selfworld-labs/adchain-sdk-ssp-ios-release.git", from: "0.3.3")
 
 // Target dependency:
 .product(name: "AdchainSspAdmob", package: "adchain-sdk-ssp-ios-release")
@@ -35,7 +35,7 @@ pod 'AdchainSsp'
 pod 'Google-Mobile-Ads-SDK', '~> 12.12'
 ```
 
-> 어댑터 파일을 추가하면 `AdchainSspSDK.initialize()` 시 자동 감지됩니다.
+> 어댑터 파일을 추가하면 `AdchainSsp.initialize()` 시 자동 감지됩니다.
 
 ## 의존성
 
@@ -48,14 +48,14 @@ pod 'Google-Mobile-Ads-SDK', '~> 12.12'
 import AdchainSsp
 
 // 초기화 (어댑터 자동 감지)
-AdchainSspSDK.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
+AdchainSsp.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
 
 // Rewarded Video 로드
 let callback = MyAdCallback()
-AdchainSspSDK.loadRewardedVideo("YOUR_PLACEMENT_ID", callback: callback)
+AdchainSsp.loadRewardedVideo("YOUR_PLACEMENT_ID", callback: callback)
 
 // Rewarded Video 노출
-AdchainSspSDK.showRewardedVideo(viewController, placementId: "YOUR_PLACEMENT_ID", callback: callback)
+AdchainSsp.showRewardedVideo(viewController, placementId: "YOUR_PLACEMENT_ID", callback: callback)
 ```
 
 > 이 레포는 바이너리 배포용입니다. 소스는 별도 관리됩니다.
