@@ -5,6 +5,22 @@ XCFramework + 어댑터 소스를 함께 제공하며 SPM과 CocoaPods를 통해
 
 ---
 
+## 배포 완료 체크리스트
+
+릴리스 시 아래 항목을 **모두** 완료해야 합니다. 하나라도 빠지면 배포 미완료입니다.
+
+- [ ] `AdchainSspCore.xcframework` 교체 (Google 심볼 0개 확인)
+- [ ] `Adapters/Admob/` 소스 파일 업데이트
+- [ ] `Package.swift` 버전/의존성 확인
+- [ ] `AdchainSsp.podspec` 버전 업데이트 + `pod trunk push` (→ CocoaPods 배포 완료)
+- [ ] `git tag -a "vX.X.X"` + push (→ SPM 배포 완료)
+- [ ] GitHub Release: `gh release create vX.X.X` + `AdchainSspAdmob-X.X.X.zip` 첨부
+- [ ] 소스 레포 태그 1:1 매칭 확인
+- [ ] README.md 버전 업데이트 (설치 가이드 버전 확인)
+- [ ] downstream 레포 의존성 업데이트 (Package.swift from: 버전)
+
+---
+
 ## 레포 구조
 
 ```
@@ -114,16 +130,6 @@ AdchainSspAdmob (source)
 ```
 adchain-sdk-ssp-ios/DEPLOYMENT_GUIDE.md
 ```
-
-### 빠른 참조: 릴리스 체크리스트
-
-- [ ] `AdchainSsp.xcframework` 교체 (Google 심볼 0개 확인)
-- [ ] `Adapters/Admob/` 소스 파일 업데이트
-- [ ] `Package.swift` 버전/의존성 확인
-- [ ] `AdchainSsp.podspec` 버전 업데이트
-- [ ] `git tag -a "vX.X.X"` + push
-- [ ] `pod trunk push AdchainSsp.podspec --allow-warnings`
-- [ ] `AdchainSspAdmob-X.X.X.zip` 생성 + `gh release create vX.X.X` 첨부 (CocoaPods 고객용)
 
 ---
 
