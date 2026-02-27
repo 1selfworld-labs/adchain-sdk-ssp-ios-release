@@ -27,7 +27,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AdchainSspCore",
-            path: "AdchainSsp.xcframework"
+            path: "AdchainSspCore.xcframework"
         ),
         .target(
             name: "AdchainSspAdmob",
