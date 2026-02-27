@@ -8,7 +8,7 @@ AdChain SSP iOS SDK 바이너리 배포 레포지토리입니다.
 
 **AdMob 사용 시:**
 ```swift
-.package(url: "https://github.com/1selfworld-labs/adchain-sdk-ssp-ios-release.git", from: "0.3.3")
+.package(url: "https://github.com/1selfworld-labs/adchain-sdk-ssp-ios-release.git", from: "0.3.0")
 
 // Target dependency:
 .product(name: "AdchainSspAdmob", package: "adchain-sdk-ssp-ios-release")
@@ -45,7 +45,7 @@ pod 'Google-Mobile-Ads-SDK', '~> 12.12'
 ## 사용법
 
 ```swift
-import AdchainSsp
+import AdchainSspCore
 
 // 초기화 (어댑터 자동 감지)
 AdchainSsp.initialize(["appKey": "YOUR_APP_KEY", "isDebug": false])
