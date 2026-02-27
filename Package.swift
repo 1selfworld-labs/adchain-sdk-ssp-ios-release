@@ -7,12 +7,10 @@ let package = Package(
     products: [
         .library(
             name: "AdchainSsp",
-            type: .dynamic,
-            targets: ["AdchainSspCore"]
+            targets: ["AdchainSspTarget"]
         ),
         .library(
             name: "AdchainSspAdmob",
-            type: .dynamic,
             targets: ["AdchainSspAdmob"]
         ),
     ],
@@ -32,9 +30,17 @@ let package = Package(
             path: "AdchainSspCore.xcframework"
         ),
         .target(
-            name: "AdchainSspAdmob",
+            name: "AdchainSspTarget",
             dependencies: [
                 "AdchainSspCore",
+                .product(name: "AdchainCommon", package: "adchain-sdk-common-ios-release"),
+            ],
+            path: "Sources/AdchainSspTarget"
+        ),
+        .target(
+            name: "AdchainSspAdmob",
+            dependencies: [
+                "AdchainSspTarget",
                 .product(name: "AdchainCommon", package: "adchain-sdk-common-ios-release"),
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
             ],
